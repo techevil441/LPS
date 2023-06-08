@@ -15,6 +15,56 @@ body {
     box-sizing: border-box;
     z-index: 0;
   }
+
+  .content {
+    display: flex;
+    border: 5px solid #797979;
+    margin: 20px 20px 0 20px; /* Adjust the margin values as needed */
+    padding: 20px;
+    flex: 1;
+    max-width: 100%;
+  }
+  
+  .bigfigure {
+    width: 90%;
+    height:auto;
+    margin: 80px auto;
+    margin-bottom: 0;
+   
+  }
+
+  .bigfigure img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block; /* Add this line to ensure proper alignment */
+    margin: 0 auto; /* Add this line to center the image horizontally */
+  }
+  
+  
+  figcaption {
+    font-size: 14px;
+    font-style: italic;
+    color: #0077c0;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .bio {
+    width: 80%;
+    margin: 0 auto;
+
+    font-size: 16px;
+  }
+  
+  h3 {
+    color: #0077c0;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bolder;
+  }
   
   .overlay {
     position: absolute;
@@ -27,20 +77,24 @@ body {
     animation: staticGlitch 1s infinite;
     z-index: 1;
   }
-  h1{
+
+  h1 {
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #89acf8;
     text-align: center;
-    
+    margin-bottom: 20px;
   }
-  p{
-    color:aliceblue;
+
+  p {
+    color: aliceblue;
     font-size: 18px;
-    width:60%;
-    padding-left: 20%;
-    text-indent: 18px;
+    text-indent: 3ch;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 0 20px;
   }
+  
   .underlay {
     position: absolute;
     top: 0;
@@ -69,6 +123,7 @@ body {
     height: 100%;
     object-fit: contain;
   }
+
   .underlay-container {
     position: absolute;
     top: 0;
@@ -85,6 +140,7 @@ body {
     height: 100%;
     background-size: cover;
   }
+
   .link-buttons {
     position: absolute;
     bottom: 20px;
@@ -115,5 +171,14 @@ body {
     background-color: #8cdcff;
     transform: translateZ(5px);
   }
+  .lists {
+    Margin: 0;
+    color: #0077c0;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+
+  
   
   

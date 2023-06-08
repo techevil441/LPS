@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 10px solid #3c404d;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    opacity: 0.5;
+    animation: staticGlitch 1s infinite;
+    z-index: 1;
+  }
+  h1{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #89acf8;
+    text-align: center;
+    
+  }
+  p{
+    color:aliceblue;
+    font-size: 18px;
+    width:60%;
+    padding-left: 20%;
+    text-indent: 18px;
+  }
+  .underlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  
+  .header-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    z-index: 2;
+    transform: translateY(0);
+  }
+  
+  .glitch-image,
+  .underlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .underlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .underlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  .link-buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2; /* Ensure link buttons appear on top */
+    opacity: 60%;
+  }
+  
+  .link-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .link-buttons a:hover {
+    background-color: #7ad05a;
+    transform: translateZ(10px);
+  }
+  
+  .link-buttons a:active {
+    background-color: #8cdcff;
+    transform: translateZ(5px);
+  }
+  
+  
